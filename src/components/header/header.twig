@@ -1,0 +1,56 @@
+<header class="header">
+  <div class="container-big">
+    <div class="header__inner">
+      <div class="header-mobile">
+        <a class="logo" href="">
+          <img src="images/ico/logo.svg" loading="lazy" alt="logo" />
+        </a>
+        <a class="header-partner" href="#">
+          <img src="images/ico/partner.svg" loading="lazy" alt="partner" />
+        </a>
+      </div>
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="header-left">
+          <a class="logo" href="">
+            <img src="images/ico/logo.svg" loading="lazy" alt="logo" />
+          </a>
+          <a class="header-partner" href="#">
+            <img src="images/ico/partner.svg" loading="lazy" alt="partner" />
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Výsledky </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Propozice </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Trasa závodu </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> fotogalerie </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Historie </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Partneři </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-right">
+          {% include "@components/social/social.twig" %}
+          <a href="#" class="header__certificate">
+            <img src="images/content/svaz.png" loading="lazy" alt="" />
+          </a>
+        </div>
+      </nav>
+      <button class="c-header__opener js-header__opener" type="button">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>

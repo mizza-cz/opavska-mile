@@ -1,0 +1,210 @@
+.header {
+  position: relative;
+  z-index: 99999;
+  .logo {
+    width: 76px;
+    object-fit: contain;
+    display: block;
+    position: relative;
+    top: -3px;
+    z-index: 9999;
+  }
+  &-mobile {
+    display: none;
+    @include media-breakpoint-down(xl) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__certificate {
+    display: block;
+    width: 94px;
+    @include media-breakpoint-down(xl) {
+      margin-top: 20px;
+    }
+    img {
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+  &-left {
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+  }
+  &-left,
+  &-right {
+    display: flex;
+    align-items: center;
+  }
+  &-right {
+    @include media-breakpoint-down(xl) {
+      flex-direction: column;
+    }
+  }
+  &__inner {
+    padding-left: 26px;
+    padding-right: 10px;
+    padding-top: 26px;
+    padding-bottom: 31px;
+    @include media-breakpoint-down(xxl) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @include media-breakpoint-down(xl) {
+      display: flex;
+      align-items: center;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+  &-partner {
+    display: block;
+    padding-left: 24px;
+    height: 20px;
+  }
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include media-breakpoint-down(xl) {
+    background-color: var(--main-green);
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 1rem 0;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    transition: opacity 0.3s, visibility 0.3s;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 32px;
+  }
+  &-nav {
+    display: flex;
+    list-style: none;
+    @include media-breakpoint-down(xl) {
+      flex-direction: column;
+      margin-bottom: 16px;
+    }
+  }
+}
+.nav-item {
+  padding: 0 16px;
+  margin: 0;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 12px;
+  }
+}
+.nav-link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--color-light);
+  text-transform: uppercase;
+  transition: all 0.3s;
+  padding: 0 8px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  @include media-breakpoint-down(xxl) {
+    padding: 0;
+  }
+  @include media-breakpoint-down(xl) {
+    text-align: center;
+    font-size: 16px;
+  }
+  &:hover {
+    color: var(--color-light);
+    text-decoration-color: inherit;
+  }
+}
+.is-nav-open .header .navbar {
+  @include media-breakpoint-down(xl) {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+}
+.c-header__opener {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 0.0625rem solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: var(--color-light);
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: 8px;
+  z-index: 999;
+  @include media-breakpoint-down(sm) {
+    padding: 0.25rem 0;
+  }
+  span {
+    transition: all 0.3s;
+    width: 24px;
+    height: 3px;
+    background: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(255, 103, 47, 0.2);
+    display: block;
+    margin-left: 16px;
+    &::before,
+    &::after {
+      transition: all 0.3s;
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 3px;
+      background: #fff;
+      left: 0;
+      right: 0;
+      box-shadow: 0 2px 5px rgba(255, 103, 47, 0.2);
+    }
+    &::before {
+      transform: translateY(-7px);
+    }
+    &::after {
+      transform: translateY(7px);
+    }
+  }
+  &:focus {
+    box-shadow: none;
+  }
+
+  @include media-breakpoint-only(xxl) {
+    display: none;
+  }
+  @include media-breakpoint-only(xl) {
+    display: none;
+  }
+}
+.collapse:not(.show) {
+  display: flex;
+}
+
+.c-header__opener.is-open {
+  span {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+  }
+  span:before {
+    transform: rotate(45deg);
+  }
+  span:after {
+    transform: rotate(-45deg);
+  }
+}
+.social {
+  @include media-breakpoint-down(xl) {
+    margin-right: 0;
+  }
+}

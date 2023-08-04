@@ -1,0 +1,32 @@
+.header-section {
+  background-color: var(--main-green);
+  box-shadow: 0px 4px 84px 0px #03061a3d;
+  border-radius: 0px 0px 48px 48px;
+  padding-bottom: 32px;
+  position: relative;
+  margin-bottom: 90px;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 500px;
+    height: 480px;
+    background-image: url("../images/ico/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1120px;
+    height: 481px;
+    left: 0;
+    top: 0;
+    background-image: url("../images/ico/bg-2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: skew(-75deg, 28deg);
+  }
+}

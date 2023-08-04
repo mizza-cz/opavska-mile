@@ -1,0 +1,124 @@
+.footer {
+  padding-top: 60px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 40px;
+  }
+  &__inner {
+    position: relative;
+    padding-top: 48px;
+
+    overflow: hidden;
+    padding-bottom: 32px;
+    @include media-breakpoint-down(lg) {
+      padding-top: 0;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0%;
+      top: 0;
+      background-image: url("../images/ico/footer-bg.svg");
+      width: 1336px;
+      height: 508px;
+      background-repeat: no-repeat;
+
+      @include media-breakpoint-only(lg) {
+        width: 1240px;
+      }
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+  }
+
+  &__top {
+    display: flex;
+    margin-bottom: 64px;
+    position: relative;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+  }
+  &__logo {
+    height: 80px;
+    @include media-breakpoint-down(lg) {
+      margin-left: 60px;
+      margin-bottom: 24px;
+    }
+  }
+  &__info {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: var(--main-green);
+    a {
+      color: #d32d7d;
+      text-decoration-color: transparent;
+      transition: all 0.3s;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 0;
+    }
+    a {
+      display: block;
+      width: 80px;
+      height: 21px;
+      padding: 0 8px;
+      img {
+        transform: none;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+  }
+  &__list {
+    display: flex;
+    margin-left: -20px;
+    margin-right: -20px;
+    flex-wrap: wrap;
+    @include media-breakpoint-down(lg) {
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    li {
+      padding: 0 20px;
+      margin-bottom: 20px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 12px;
+      }
+    }
+    a {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 17px;
+      color: #575756;
+      text-decoration-color: transparent;
+      transition: all 0.3s;
+      position: relative;
+      z-index: 1;
+      &:hover {
+        color: var(--main-green);
+      }
+    }
+  }
+}
