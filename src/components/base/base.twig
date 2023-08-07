@@ -34,7 +34,9 @@
   </head>
   <body>
     <div class="base">
-      {% include "@components/header-section/header-section.twig" %}
+      <section class="header-section">
+        {% block header %} {% endblock %}
+      </section>
       <main class="main" aria-label="Hlavní obsah">
         {% block main %}{% endblock %}
       </main>

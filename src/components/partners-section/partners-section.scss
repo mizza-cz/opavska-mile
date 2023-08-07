@@ -1,7 +1,10 @@
 .partners-section {
   text-align: center;
   padding-bottom: 40px;
-
+  margin-top: 90px;
+  @include media-breakpoint-down(md) {
+    margin-top: 60px;
+  }
   img {
     visibiliy: hidden;
     transition: all 1s ease;
