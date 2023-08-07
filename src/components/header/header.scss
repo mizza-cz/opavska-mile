@@ -108,8 +108,7 @@
   text-transform: uppercase;
   transition: all 0.3s;
   padding: 0 8px;
-  text-decoration: underline;
-  text-decoration-color: transparent;
+  text-decoration: none;
   @include media-breakpoint-down(xxl) {
     padding: 0;
   }
@@ -118,8 +117,8 @@
     font-size: 16px;
   }
   &:hover {
+    transform: skew(-17deg);
     color: var(--color-light);
-    text-decoration-color: inherit;
   }
 }
 .is-nav-open .header .navbar {
