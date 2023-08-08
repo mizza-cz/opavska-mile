@@ -73,7 +73,7 @@
     position: absolute;
     top: 5rem;
     right: 0;
-    z-index: 99;
+    z-index: 9999999;
     width: 100%;
     padding: 1rem 0;
     opacity: 0;
@@ -120,6 +120,9 @@
     transform: skew(-17deg);
     color: var(--color-light);
   }
+}
+.is-nav-open .header-section {
+  overflow: inherit;
 }
 .is-nav-open .header .navbar {
   @include media-breakpoint-down(xl) {

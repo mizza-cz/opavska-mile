@@ -34,12 +34,14 @@
   </head>
   <body>
     <div class="base">
-      <section class="header-section">
-        {% block header %} {% endblock %}
-      </section>
-      <main class="main" aria-label="Hlavní obsah">
-        {% block main %}{% endblock %}
-      </main>
+      <div class="base-wrapper">
+        <section class="header-section">
+          {% block header %} {% endblock %}
+        </section>
+        <main class="main" aria-label="Hlavní obsah">
+          {% block main %}{% endblock %}
+        </main>
+      </div>
       {% include "@components/footer/footer.twig" %}
     </div>
     <script

@@ -19,6 +19,7 @@
     background-image: url("../images/ico/bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
   }
   &::after {
     content: "";
@@ -31,6 +32,34 @@
     background-repeat: no-repeat;
     background-size: cover;
     transform: skew(-75deg, 28deg);
+    border-radius: 48px 0px 0px 0px;
+  }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    border: none;
+    position: relative;
+    z-index: 999;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    a {
+      border-radius: 88px;
+      border: 1px solid var(--color-light);
+      padding: 8px 32px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 17px;
+      text-align: left;
+      text-decoration: none;
+      transition: all 0.3s;
+      color: var(--color-light);
+      display: block;
+    }
+    .active {
+      background-color: var(--color-pink);
+      border: 1px solid var(--color-pink);
+    }
   }
   .h1 {
     color: var(--color-light);
@@ -43,4 +72,11 @@
   &__menu {
     padding-top: 22px;
   }
+}
+
+.tab-pane.fade {
+  display: none;
+}
+.tab-pane.active {
+  display: block;
 }

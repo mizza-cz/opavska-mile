@@ -8,12 +8,9 @@
   img {
     visibiliy: hidden;
     transition: all 1s ease;
-    transform: translateY(160px);
+    transform: translateY(0px);
   }
-  img.anime {
-    visibiliy: visible;
-    transform: translateY(0);
-  }
+
   &__box {
     margin-bottom: 40px;
   }
@@ -58,6 +55,7 @@
   width: 100%;
   display: block;
   margin: 0 auto;
+
   img {
     width: 100%;
     object-fit: contain;
