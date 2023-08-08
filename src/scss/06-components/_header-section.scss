@@ -55,10 +55,20 @@
       transition: all 0.3s;
       color: var(--color-light);
       display: block;
+      &:hover,
+      &:focus {
+        background: #353535;
+        border: 1px solid var(--color-light);
+      }
     }
     .active {
       background-color: var(--color-pink);
       border: 1px solid var(--color-pink);
+      &:hover,
+      &:focus {
+        background-color: var(--color-pink);
+        border: 1px solid var(--color-pink);
+      }
     }
   }
   .h1 {
