@@ -46,7 +46,6 @@
     display: grid;
     grid-template-rows: 1fr auto;
     break-inside: avoid;
-    margin-bottom: 24px;
   }
 
   figure > img {
@@ -58,6 +57,8 @@
     color: #555;
     outline: none;
     text-decoration: none;
+    margin-bottom: 24px;
+    display: block;
   }
   figure {
     a:hover,
