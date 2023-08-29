@@ -4,3 +4,75 @@
   --main-green: #1a433e;
   --color-pink: #d32d7d;
 }
+
+.mile {
+  --main-green: #75480c;
+  --color-pink: #c97911;
+
+  .header-section:after {
+    background-image: url("../images/ico/bg-2-mile.svg");
+  }
+  .header-section::before {
+    background-image: url("../images/ico/bg-mile.svg");
+  }
+  .footer__inner:before {
+    display: none;
+  }
+}
+
+.records {
+  --color-pink: #1b8ea9;
+  --main-green: #f9b333;
+  .header-section:after {
+    background-image: url("../images/ico/bg-2-5k.svg");
+  }
+  .header-section::before {
+    background-image: url("../images/ico/bg-5k.svg");
+  }
+  .footer__inner:before {
+    display: none;
+  }
+  --color-dark: #1d1d1b;
+  h4 {
+    color: var(--color-dark);
+  }
+  .partners-section h3,
+  .partners-section h4 {
+    color: var(--color-dark);
+  }
+  .footer__info {
+    color: var(--color-dark);
+  }
+  .hp-links__link p {
+    color: var(--color-dark);
+  }
+}
+
+.les {
+  --color-pink: #048729;
+  --main-green: #155624;
+  .header-section:after {
+    background-image: url("../images/ico/bg-2-les.svg");
+  }
+  .header-section::before {
+    background-image: url("../images/ico/bg-les.svg");
+  }
+  .footer__inner:before {
+    display: none;
+  }
+  --color-dark: #1d1d1b;
+}
+.vanoce {
+  --color-pink: #45cfe5;
+  --main-green: #234c73;
+  .header-section:after {
+    background-image: url("../images/ico/bg-2-vanoce.svg");
+  }
+  .header-section::before {
+    background-image: url("../images/ico/bg-vanoce.svg");
+  }
+  .footer__inner:before {
+    display: none;
+  }
+  --color-dark: #1d1d1b;
+}
