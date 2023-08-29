@@ -52,6 +52,7 @@
   --color-pink: #048729;
   --main-green: #155624;
   .header-section:after {
+    background-size: contain;
     background-image: url("../images/ico/bg-2-les.svg");
   }
   .header-section::before {
