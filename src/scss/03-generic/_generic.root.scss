@@ -24,6 +24,7 @@
   --color-pink: #1b8ea9;
   --main-green: #f9b333;
   .header-section:after {
+    background-size: contain;
     background-image: url("../images/ico/bg-2-5k.svg");
   }
   .header-section::before {
