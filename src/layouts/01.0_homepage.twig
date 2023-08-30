@@ -1,6 +1,10 @@
 {% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
 block header %} {% include "@components/header/header.twig" %} {% include
 "@components/topstory/topstory.twig" %} {% include
-"@components/hp-links/hp-links.twig" %} {% endblock %} {% block main %} {%
+"@components/hp-links/hp-links.twig" %} {% endblock %} {% block main %} 
+{%
+   include "@components/hp-map/hp-map.twig" %}
+
+{%
 include "@components/partners-section/partners-section.twig" %} {% include
 "@components/hp-gallery/hp-gallery.twig" %} {% endblock %}

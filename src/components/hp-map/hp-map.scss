@@ -1,0 +1,11 @@
+.hp-map {
+  &__item {
+    border-radius: 12px;
+    overflow: hidden;
+    iframe {
+      display: block;
+      width: 100%;
+      aspect-ratio: 600/521;
+    }
+  }
+}
